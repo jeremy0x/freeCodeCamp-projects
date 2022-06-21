@@ -12,4 +12,4 @@ This is a repository for all the projects I did while learning at [freeCodeCamp]
 - [Front End Development Libraries](https://www.freecodecamp.org/learn/front-end-development-libraries/#front-end-development-libraries-projects)
 - [Data Visualization](https://www.freecodecamp.org/learn/data-visualization/#data-visualization-projects)
 - [Backend Development and APIs](https://www.freecodecamp.org/learn/backend-development-and-apis/#backend-development-and-apis-projects)
-- [Quality Assurance Certification](https://www.freecodecamp.org/learn/quality-assurance/#quality-assurance-projects)
+- [Quality Assurance](https://www.freecodecamp.org/learn/quality-assurance/#quality-assurance-projects)
