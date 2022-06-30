@@ -1,0 +1,136 @@
+:root {
+    --font: Russo One;
+	--size: 18px;
+}
+  
+body {
+	margin: 0;
+	user-select: none;
+	background-color: #8d8d8d;
+}
+
+#root {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.inner-container {
+	outline: 5px solid orange;
+	position: relative;
+	width: 660px;
+	text-align: center;
+	background-color: #b3b3b3;
+
+	.pad-bank {
+		width: 332px;
+		height: 272px;
+		display: inline-block;
+		margin: 20px;
+
+		.drum-pad {
+			position: relative;
+			float: left;
+			width: 100px;
+			height: 80px;
+			margin-right: 10px;
+			border-radius: 5px;
+			box-sizing: border-box;
+			cursor: pointer;
+			background-color: grey;
+			margin-top: 10px;
+			box-shadow: black 3px 3px 5px;
+			font-size: var(--size);
+			font-family: var(--font);
+			outline: none;
+
+			&:active {
+				background-color: orange;
+				box-shadow: 0 3px orange;
+				height: 77px;
+				margin-top: 13px;
+				border: none;
+			}
+		}
+	}
+
+	.controls-container {
+		width: 240px;
+		height: 308px;
+		display: inline-block;
+		margin: 20px 20px 10px 10px;
+		vertical-align: top;
+		font-family: var(--font);
+
+		.switch {
+			position: relative;
+			display: inline-block;
+			width: 60px;
+			height: 34px;
+
+			input { 
+				opacity: 0;
+				width: 0;
+				height: 0;
+			}
+
+			.slider {
+				position: absolute;
+				cursor: pointer;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: black;
+				-webkit-transition: .4s;
+				transition: .4s;
+
+				&:before {
+					position: absolute;
+					content: "";
+					height: 26px;
+					width: 26px;
+					left: 4px;
+					bottom: 4px;
+					background-color: blue;
+					-webkit-transition: .4s;
+					transition: .4s;
+				  }
+				  
+			}
+
+			input:focus + .slider {
+				box-shadow: 0 0 1px #2196F3;
+			}
+			  
+			input:checked + .slider:before {
+				-webkit-transform: translateX(26px);
+				-ms-transform: translateX(26px);
+				transform: translateX(26px);
+			}
+		}
+
+		.flipped {
+			transform: rotateY(180deg);
+		}
+
+		#display {
+			width: 200px;
+			background-color: gray;
+			margin: 15px auto;
+			padding: 15px;
+			box-sizing: border-box;
+		}
+	}
+}
+
+h2 {
+	font-size: var(--size);
+	font-weight: 100;
+}
+
+[type=range] {
+    margin: 12.5px 0;
+    width: 100%;
+}

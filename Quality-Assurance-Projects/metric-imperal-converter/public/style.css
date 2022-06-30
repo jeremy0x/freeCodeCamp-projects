@@ -1,0 +1,12 @@
+body {
+    background-color: #181a1b;
+    color: white;
+}
+
+code {
+    background-color: #1e2021;
+}
+
+section, header {
+    margin: 50px;
+}

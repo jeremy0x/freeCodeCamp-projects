@@ -1,0 +1,80 @@
+@media only screen and (max-width: 600px) {
+  .buttons {
+    flex-direction: column-reverse;
+    #new-quote {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.App {
+  text-align: center;
+
+  #quote-box {
+    padding: 25px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    max-width: 38%;
+    min-width: 38%;
+    transition: all .35s ease-in-out;
+
+    #text {
+      font-size: xx-large;
+      font-weight: 400;
+    }
+
+    #author {
+      text-align: end;
+      font-size: 20px;
+      font-weight: 350;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      min-height: 50px;
+      #tweet-quote {
+        float: left;
+        padding: 10px;
+        cursor: pointer;
+        color: white;
+        border-radius: 5px;
+        align-self: center;
+        justify-content: center;
+        user-select: none;
+      }
+    }
+
+    #new-quote {
+      border-radius: 5px;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      color: white;
+      font-size: 16px;
+      user-select: none;
+    }
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    :hover { color: white; }
+    :active { color: white; }
+    :focus { color: white; }
+  }
+
+  .footer { font-size: small; }
+
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+}
