@@ -4,8 +4,6 @@
 
 This is a repository for all the projects I did while learning at [freeCodeCamp](https://freecodecamp.org/learn).
 
-<hr>
-
 ### For more details about each project, click on the link(s) below...
 
 - [JavaScript Algorithms and Data Structures](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#javascript-algorithms-and-data-structures-projects)
